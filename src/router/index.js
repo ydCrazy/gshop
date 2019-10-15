@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: yoda
  * @Date: 2019-10-13 22:38:05
- * @LastEditTime: 2019-10-15 13:05:45
+ * @LastEditTime: 2019-10-15 22:47:49
  * @LastEditors: Please set LastEditors
  */
 import Vue from 'vue'
@@ -33,7 +33,6 @@ export default new Router({
     },
     {
       path: '/',
-      name: 'HelloWorld',
       redirect:'/home'
     }
   ]

@@ -2,26 +2,23 @@
  * @Description: In User Settings Edit
  * @Author: 于达
  * @Date: 2019-10-15 18:16:39
- * @LastEditTime: 2019-10-15 19:05:49
+ * @LastEditTime: 2019-10-15 22:56:10
  * @LastEditors: Please set LastEditors
  -->
 <template>
    <div class="footer_guide border-1px">
-
-    <a href="#/misite" class="guide_item" :class="{on:'/misite'===$route.path}">
+    <a href="#/home" class="guide_item" :class="{on:'/home'===$route.path}" >
       <span class="item_icon">
         <i class="iconfont icon-waimai"></i>
       </span>
       <span>外卖</span>
     </a>
-
     <a href="#/search" class="guide_item" :class="{on:'/search'===$route.path}">
       <span class="item_icon">
         <i class="iconfont icon-search"></i>
       </span>
       <span>搜索</span>
     </a>
-
     <a href="#/order" class="guide_item" :class="{on:'/order'===$route.path}">
       <span class="item_icon">
         <i class="iconfont icon-dingdan"></i>
@@ -40,7 +37,11 @@
 
 <script>
 export default {
-
+methods:{
+  // goTo(path){
+  //    this.$router.replace(path);
+  // }
+}
 }
 </script>
 
