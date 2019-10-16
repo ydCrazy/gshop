@@ -2,13 +2,13 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-10-13 22:38:05
- * @LastEditTime: 2019-10-15 18:24:12
+ * @LastEditTime: 2019-10-16 20:31:29
  * @LastEditors: Please set LastEditors
  -->
 <template>
   <div id="app">
     <router-view/>
-    <Footer/>
+    <Footer v-show="$route.meta.showFooter"/>
   </div>
 </template>
 

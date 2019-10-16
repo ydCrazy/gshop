@@ -2,16 +2,17 @@
  * @Description: In User Settings Edit
  * @Author: yuda
  * @Date: 2019-10-14 22:16:43
- * @LastEditTime: 2019-10-15 22:31:44
+ * @LastEditTime: 2019-10-16 18:55:28
  * @LastEditors: Please set LastEditors
  -->
 <template>
   <section class="order">
-        <header class="header">
+        <!-- <header class="header">
           <a class="header_title">
             <span class="header_title_text">订单列表</span>
           </a>
-        </header>
+        </header> -->
+        <HeaderTop title="订单列表"></HeaderTop>
         <section class="order_no_login">
           <img src="./images/order/person.png">
           <h3>登录后查看外卖订单</h3>
@@ -21,43 +22,17 @@
 </template>
 
 <script>
+import HeaderTop from "../../components/HeaderTop/HeaderTop.vue"
 export default {
-
+components:{
+  HeaderTop,
+}
 }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
         .order  //订单
           width 100%
-          .header
-            background-color #02a774
-            position fixed
-            z-index 100
-            left 0
-            top 0
-            width 100%
-            height 45px
-            .header_title
-              position absolute
-              top 50%
-              left 50%
-              transform translate(-50%, -50%)
-              width 50%
-              color #fff
-              text-align center
-            .header_title_text
-                font-size 20px
-                color #fff
-                display block
-            .header_login
-              font-size 14px
-              color #fff
-              position absolute
-              right 15px
-              top 50%
-              transform translateY(-50%)
-              .header_login_text
-                color #fff
           .order_no_login
             padding-top 140px
             width 60%
