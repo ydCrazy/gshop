@@ -2,8 +2,8 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-10-13 22:38:05
- * @LastEditTime: 2019-10-13 22:38:05
- * @LastEditors: your name
+ * @LastEditTime: 2019-10-18 00:27:43
+ * @LastEditors: Please set LastEditors
  */
 // 'use strict'
 // Template version: 1.3.1
@@ -13,11 +13,18 @@ const path = require('path')
 
 module.exports = {
   dev: {
-
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/api':{ //匹配所有以/api开头的路径
+        target:'http://localhost:4000',
+        changeOrigin:true,
+        pathRewrite:{ //重写路径，去掉路径中开头的/api
+          '^/api':'',
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

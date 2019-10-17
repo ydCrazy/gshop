@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-10-13 22:38:05
- * @LastEditTime: 2019-10-16 20:31:29
+ * @LastEditTime: 2019-10-18 00:04:55
  * @LastEditors: Please set LastEditors
  -->
 <template>
@@ -18,7 +18,10 @@ export default {
   components:{
     Footer,
   },
-  name: 'App'
+  name: 'App',
+  mounted(){
+    this.$store.dispatch('getAddress')
+  }
 }
 </script>
 
@@ -27,6 +30,4 @@ export default {
   width 100%
   height 100%
   background-color #f5f5f5
-
-
 </style>

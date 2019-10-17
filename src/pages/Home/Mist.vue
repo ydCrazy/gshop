@@ -1,11 +1,10 @@
 <!--
  * @Description: In User Settings Edit
- * @Author: yuda
- * @Date: 2019-10-14 22:16:24
- * @LastEditTime: 2019-10-16 19:45:53
+ * @Author: yyuda
+ * @Date: 2019-10-17 21:08:28
+ * @LastEditTime: 2019-10-18 00:27:12
  * @LastEditors: Please set LastEditors
  -->
-
 <template>
   <div class="msite">
         <!--首页头部-->
@@ -153,7 +152,6 @@
 import HeaderTop from "../../components/HeaderTop/HeaderTop"
 import Swiper from 'swiper'
 import '../../../node_modules/swiper/css/swiper.min.css'
-
 import ShopList from "../../components/ShopLIst/ShopList"
 export default {
     components:{
