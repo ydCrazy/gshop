@@ -9,7 +9,7 @@
 export default {
     latitude:40.10038, //唯独
     longitude:116.36867, //经度
-    address:"", //地址
+    address:{}, //地址
     categories:[], //分类数组
     shops:[], //商家数组
 }
